@@ -46,7 +46,7 @@ $(function(){
         .replace(/‘/g, "<span class=\"choice\">‘</span>")
         .replace(/㎡/g, "<span class=\"choice\">㎡</span>")
         .replace(/\'/g, "<span class=\"choice\">\'</span>")
-        // .replace(/&/g, "<span class=\"choice\">&</span>")
+        // .replace(/&/g, "<span class=\"choice\">&</span>") //要確認。。
       );
     }
 
