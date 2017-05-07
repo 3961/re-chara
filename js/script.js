@@ -46,11 +46,7 @@ $(function(){
         .replace(/‘/g, "<span class=\"choice\">‘</span>")
         .replace(/㎡/g, "<span class=\"choice\">㎡</span>")
         .replace(/\'/g, "<span class=\"choice\">\'</span>")
-<<<<<<< HEAD
         // .replace(/&/g, "<span class=\"choice\">&</span>") //要確認。。
-=======
-        // .replace(/&/g, "<span class=\"choice\">&</span>")
->>>>>>> 558793515d0c3e27f6c76fa2da993435527de9a6
       );
     }
 
