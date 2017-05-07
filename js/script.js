@@ -40,14 +40,22 @@ $(function(){
     $outputCode.text(tagDefault(str));
     $outputCode.wrapInner('<pre />');
 
-    if( str.indexOf("〜") != -1 ){//どれか一個でもあったら全てハイライトさせる
-      $outputCode.html(str
-        .replace(/〜/g, "<span class=\"choice\">〜</span>")
-        .replace(/‘/g, "<span class=\"choice\">‘</span>")
-        .replace(/㎡/g, "<span class=\"choice\">㎡</span>")
-        .replace(/\'/g, "<span class=\"choice\">\'</span>")
-        // .replace(/&/g, "<span class=\"choice\">&</span>") //要確認。。
-      );
+    var letterArr = ["～", "‘", "㎡", "\'"];
+    var i = letterArr.length;
+
+    str = str.replace(/^<[^>]*>|<[^>]*>$/g, ''); // 余計な文字列は削っておく
+
+    while (i--) {
+      if (str.indexOf(letterArr[i]) !== -1) {
+          $outputCode.html(str
+            .replace(/〜/g, "<span class=\"choice\">〜</span>")
+            .replace(/‘/g, "<span class=\"choice\">‘</span>")
+            .replace(/㎡/g, "<span class=\"choice\">㎡</span>")
+            .replace(/\'/g, "<span class=\"choice\">\'</span>")
+            // .replace(/&/g, "<span class=\"choice\">&</span>") //要確認。。
+          );
+        break;
+      }
     }
 
   });
@@ -89,8 +97,6 @@ $(function(){
       $outputCode.wrapInner('<pre />');
 
     }
-
-    // var letterArr = ["～", "‘", "㎡", "&"];
 
   });
 

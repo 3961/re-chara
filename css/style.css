@@ -104,6 +104,10 @@ vertical-align:middle;
 
 main{
   margin: 20px;
+  font-size: 13px;
+}
+.txt{
+  margin: 20px 0 0;
 }
 .output{
   /*width: 100%;*/
