@@ -30,7 +30,7 @@ background:transparent;
 }
 
 body {
-line-height:1;
+line-height:1.5;
 }
 
 article,aside,details,figcaption,figure,
@@ -104,7 +104,6 @@ vertical-align:middle;
 
 main{
   margin: 20px;
-  line-height: 1,5;
   font-size: 13px;
 }
 .txt{
