@@ -13,23 +13,27 @@
     <section class="input">
       <form name="form" id="id_form">
         <div class="">
-          <textarea name="code" cols=100 rows=10></textarea>
+          <textarea name="code" cols=100 rows=10 id="id_code"></textarea>
           <div class="btn-wrap">
             <input class="btn-check" type="button" value="いったん確認">
             <input class="btn-submit" type="button" value="変！換！">
           </div>
           <p class="txt">
-            エディタで編集したコード入れてみてください。<br>
-            メモ帳とかのはダメかも…<br>
-            今んとこ「&」判定できません。<br>
-            自力でおなしゃす。
+            2017.05.15<br>
+            ブラウザのソース、エディタ、メモ帳、どこからのコピペでもいけるようにしました（たぶん）<br>
+            変換後も必ず目視確認してください。<br>
+            ---<br>
+            2017.05.01<br>
+            <s>エディタで編集したコード入れてみてください。</s><br>
+            <s>メモ帳とかのはダメかも…</s><br>
+            今んとこ「&（半角全角ともに）」判定できません。自力でおなしゃす。
           </p>
         </div>
       </form>
     </section>
 
     <section class="output">
-      <div id="output-code"></div>
+      <div><pre id="output-code">ここに出るお( ＾ω＾)</pre></div>
     </section>
 
   </main>

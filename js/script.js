@@ -38,7 +38,7 @@ $(function(){
     //
     str = $outputCode.html();
     $outputCode.text(tagDefault(str));
-    $outputCode.wrapInner('<pre />');
+    // $outputCode.wrapInner('<pre />');
 
     var letterArr = ["～", "‘", "㎡", "\'"];
     var i = letterArr.length;
@@ -94,7 +94,7 @@ $(function(){
 
       str = $outputCode.html();
       $outputCode.text(entityify(str));
-      $outputCode.wrapInner('<pre />');
+      // $outputCode.wrapInner('<pre />');
 
     }
 
@@ -103,18 +103,20 @@ $(function(){
   function getCode(){
     //テキストエリアの値取得
     var codeVal;
-    codeVal = document.form.code.value;
-    //いらない部分は削除しとく
-    // codeVal = codeVal.replace(/^<[^>]*>|<[^>]*>$/g, '');
+    // codeVal = document.form.code.value;
+    codeVal = $('#id_code').val();
+
+console.log(codeVal);
 
     //表示先
-    var $output = document.getElementById("output-code");
+    // var $output = document.getElementById("output-code");
 
     if( codeVal === "" ){
       alert("テキストボックスに入力してください");
     }
     else{
-      $output.innerText = codeVal;
+      $('#output-code').text(codeVal);
+      // $('#output-code').wrapInner('<pre />');
     }
   }
 
