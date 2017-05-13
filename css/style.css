@@ -8,6 +8,8 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -29,8 +31,9 @@ vertical-align:baseline;
 background:transparent;
 }
 
-body {
+body,textarea,input,#output-code {
 line-height:1.5;
+font-family: 'Noto Sans JP', sans-serif;
 }
 
 article,aside,details,figcaption,figure,
@@ -104,10 +107,14 @@ vertical-align:middle;
 
 main{
   margin: 20px;
-  font-size: 13px;
+  font-size: 14px;
+}
+h1{
+  margin: 0 0 20px;
 }
 .txt{
   margin: 20px 0 0;
+  font-size: 12px;
 }
 .output{
   width: 100%;
@@ -123,7 +130,8 @@ main{
   display: inline-block;
   margin: 1px;
   padding: 0 2px;
-  background: #B8D3F3;
+  background: #FFE3EE;
+  border: 1px solid #A71A1A;
   font-weight: bold;
-  color: #343453;
+  color: #4E1421;
 }
