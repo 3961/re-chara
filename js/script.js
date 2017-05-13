@@ -106,17 +106,11 @@ $(function(){
     // codeVal = document.form.code.value;
     codeVal = $('#id_code').val();
 
-console.log(codeVal);
-
-    //表示先
-    // var $output = document.getElementById("output-code");
-
     if( codeVal === "" ){
       alert("テキストボックスに入力してください");
     }
     else{
       $('#output-code').text(codeVal);
-      // $('#output-code').wrapInner('<pre />');
     }
   }
 
